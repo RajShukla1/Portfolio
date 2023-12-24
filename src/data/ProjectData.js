@@ -1,6 +1,15 @@
 // --------------------------------------- Project List
 export const ProjectList = [
   {
+    img: "/images/raj-youtube.png",
+    title: "Youtube Clone",
+    description:
+      "It is a Youtube clone made using youtube api.",
+    tech_stack: "ReactJS, Tailwind, Redux",
+    github_url: "https://github.com/RajShukla1/my-youtube",
+    demo_url: "https://raj-youtube.vercel.app/",
+  },
+  {
     img: "/images/social.png",
     title: "Social Media",
     description:
