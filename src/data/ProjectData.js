@@ -46,45 +46,55 @@ export const ProjectList = [
 
 export const stackList = [
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/HTML5_logo_black.svg/512px-HTML5_logo_black.svg.png?20110118165859",
-    name: "HTML",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhoXisDruJMDAq3Ltd-wuaMW2lGxck9wAKw&s",
+    name: "Tailwind CSS",
   },
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
-    name: "CSS",
-  },
-  {
-    img: "https://thumbs.dreamstime.com/b/javascript-logo-javascript-logo-white-background-vector-format-available-136765881.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
     name: "JavaScript",
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
-    name: "NodeJs",
+    name: "Node.js",
   },
   {
-    img: "https://img.icons8.com/color/48/000000/react-native.png",
+    img: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
     name: "React",
   },
   {
-    img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fassets.stickpng.com%2Fthumbs%2F58480ecccef1014c0b5e492c.png&tbnid=Y56LjAodNA7XAM&vet=12ahUKEwigzoHcxtWBAxXZzaACHb_3BiMQMygAegQIARBO..i&imgrefurl=https%3A%2F%2Fwww.stickpng.com%2Fimg%2Ficons-logos-emojis%2Ftech-companies%2Fmagento-logo&docid=9vDZ-T9tdCZlQM&w=400&h=400&q=magento%202%20icon&hl=en&ved=2ahUKEwigzoHcxtWBAxXZzaACHb_3BiMQMygAegQIARBO",
-    name: "Magento2",
+    img: "https://cdn.svgrepo.com/show/303592/magento-2-logo.svg",
+    name: "Magento 2",
   },
-
   {
-    img: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
+    name: "PHP",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+    name: "MySQL",
+  },
+  {
+    img: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg",
+    name: "AWS",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
     name: "Git",
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
-    name: "mongoDB",
+    name: "MongoDB",
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
     name: "Express",
   },
-
   {
-    img: "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+    img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
     name: "Postman",
+  },
+  {
+    img: "https://www.svgrepo.com/show/31053/xml.svg",
+    name: "XML",
   },
 ];

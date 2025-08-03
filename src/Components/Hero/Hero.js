@@ -15,29 +15,32 @@ function Hero() {
       <HeroContainer>
         <HeroWrapper>
           <HeroLeft>
-            <h1>Hi, I'm Raj Pawan Shukla</h1>
-            <h5>I'm a Full Stack Web Developer</h5>
-            <p style={{ fontWeight: "500" }}>  who enjoys coding and solving problems.As an aspiring Full Stack Web
-            developer, I like the impact it creates on the world. <br></br>One
-            of my strongest skills is creativity and it helps me a lot in web
-            designs I have also contributed in some of the public github repos{" "}
-            <strong>MERN stack</strong></p>
-            
-            <div className="download">
-              <Link
-                to="/files/rajshuklacv.pdf"
-                className="btn btn--outline"
-                target="_blank"
-                download
-              >
-                Download Resume
-              </Link>
-            </div>
-           
-              
+  <h1>Hi, I'm Raj Pawan Shukla</h1>
+  <h5>I'm a Web Developer | Magento 2 Specialist</h5>
+  <p style={{ fontWeight: "500" }}>
+    I enjoy building robust web solutions and solving real-world problems. With professional experience in
+    <strong> Magento 2 development</strong>, I’ve worked on everything from custom module creation to theme integration and performance optimization. <br />
+    I'm also exploring modern web technologies like <strong>React</strong> and <strong>AWS</strong>, and have contributed to training junior developers as well.
+  </p>
 
-            <SocialIcon />
-          </HeroLeft>
+  <p style={{ fontWeight: "500" }}>
+    I believe in continuous learning and clean code. My stack includes <strong>PHP, JavaScript, MySQL, Knockout.js, XML</strong> and more — along with hands-on experience with cloud platforms and modern JavaScript frameworks.
+  </p>
+
+  <div className="download">
+    <Link
+      to="/files/RajResume.pdf"
+      className="btn btn--outline"
+      target="_blank"
+      download
+    >
+      Download Resume
+    </Link>
+  </div>
+
+  <SocialIcon />
+</HeroLeft>
+
           <HeroRight>
             <Avatar
               alt="Remy Sharp"
