@@ -18,22 +18,28 @@ export const Home = () => {
           <div>I am Raj Pawan Shukla</div>
           <div>I am a Full Stack Web Developer</div>
           <div className="download">
-            <Link to="/files/rajshuklacv.pdf" target="_blank" download>
+            <Link to="/files/rajResume.pdf" target="_blank" download>
               Resume
             </Link>
           </div>
         </div>
       </div>
       <div className="homeSkills">
-        <div>A liitle bit about my self</div>
-        <div>
-          I am a full-stack web developer. I have an
-          unwavering passion and energy for web development and am always open
-          to making new friends.
-        </div>
-        <div>Skilled in</div>
-        <div>JavaScript,HTML,CSS,Node.js,mongoDB,React,express</div>
-        <div>Connect me on - LinkedIn,github,email</div>
+  <div>A little bit about myself</div>
+  <div>
+    I'm a passionate web developer with professional experience in Magento 2,
+    specializing in custom module development, theme integration, and backend optimization.
+    I enjoy learning and building in public, and I’m always open to collaborating with fellow developers.
+  </div>
+  <div>Skilled in</div>
+  <div>
+    Magento 2, PHP, JavaScript, HTML, CSS, MySQL, XML, Knockout.js, React, Node.js, Express, MongoDB, AWS
+  </div>
+  <div>Connect with me on – LinkedIn | GitHub | Email</div>
+</div>
+      <div className="homeFooter">
+        <div>© 2025 Raj Pawan Shukla</div>
+        <div>All rights reserved</div>
       </div>
     </div>
   );
