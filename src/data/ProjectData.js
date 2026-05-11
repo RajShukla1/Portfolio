@@ -1,6 +1,15 @@
 // --------------------------------------- Project List
 export const ProjectList = [
   {
+    img: "/images/image.png",
+    title: "Finance Manager",
+    description:
+      "A fullstack website to manage your finances",
+    tech_stack: "NodeJS, NextJS",
+    github_url: "https://github.com/RajShukla1/EManager",
+    demo_url: "https://rajshukla-emanager.vercel.app/",
+  },
+  {
     img: "/images/raj-youtube.png",
     title: "Youtube Clone",
     description:
