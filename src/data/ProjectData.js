@@ -1,109 +1,50 @@
-// --------------------------------------- Project List
 export const ProjectList = [
   {
-    img: "/images/image.png",
-    title: "Finance Manager",
-    description:
-      "A fullstack website to manage your finances",
-    tech_stack: "NodeJS, NextJS",
-    github_url: "https://github.com/RajShukla1/EManager",
-    demo_url: "https://rajshukla-emanager.vercel.app/",
-  },
-  {
-    img: "/images/raj-youtube.png",
-    title: "Youtube Clone",
-    description:
-      "It is a Youtube clone made using youtube api.",
-    tech_stack: "ReactJS, Tailwind, Redux",
-    github_url: "https://github.com/RajShukla1/my-youtube",
-    demo_url: "https://raj-youtube.vercel.app/",
-  },
-  {
-    img: "/images/social.png",
-    title: "Social Media",
-    description:
-      "A Social media site to connect with friends and sharing your life events.",
-    tech_stack: "HTML, Css, ReactJS",
-    github_url: "https://github.com/RajShukla1/Social",
-    demo_url: "https://social-rajshukla1.vercel.app/",
-  },
-  {
-    img: "/images/croma.png",
-    title: "Croma Clone",
-    description: "A E-commerce site for retail chain of consumer electronics .",
-    tech_stack: "HTML, Css, Javascript, Api",
-    github_url: "https://github.com/RajShukla1/croma",
-    demo_url: "https://croma-construct-w2-ftweb16.netlify.app/",
-  },
-  {
-    img: "/images/sudoku.png",
-    title: "Sudoku",
-    description: "Sudoku is a game website.",
-    tech_stack: "Html, Css, Javascript",
-    github_url: "https://github.com/RajShukla1/sudoku",
-    demo_url: "https://sudoku-mini-project.vercel.app/    ",
-  },
-  {
-    img: "/images/hindu.png",
-    title: "the Hindustan Times Clone",
-    description: "The Hindustan Times is a new website..",
-    tech_stack: "Html, Css, Javascript",
+    id: 1,
+    title: "eManager (Expense Tracker)",
+    shortDesc: "A Progressive Web App (PWA) for smart expense tracking with receipt scanning.",
+    problem: "Users struggle to manually track daily expenses and need a smart, offline-capable solution that can automatically extract data from receipts and provide actionable financial insights.",
+    solution: "Architected a full-stack Next.js PWA powered by Supabase. Integrated Tesseract.js for AI-driven receipt scanning (OCR) and built interactive financial dashboards using Recharts.",
+    achievements: [
+      "Implemented offline-first capabilities and push notifications via next-pwa",
+      "Integrated OCR receipt scanning to automatically extract expense data",
+      "Built secure authentication and real-time database syncing with Supabase",
+      "Engineered comprehensive data export systems (PDF, Excel, CSV)"
+    ],
+    tech_stack: ["Next.js", "Supabase", "React Query", "Tesseract.js", "Tailwind CSS"],
     github_url: "https://github.com/RajShukla1",
-    demo_url: "https://rainbow-naiad-d7723d.netlify.app/",
-  },
-];
-
-export const stackList = [
-  {
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhoXisDruJMDAq3Ltd-wuaMW2lGxck9wAKw&s",
-    name: "Tailwind CSS",
+    demo_url: "https://rajshukla-emanager.vercel.app",
   },
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-    name: "JavaScript",
+    id: 2,
+    title: "Salon Website Template",
+    shortDesc: "A conversion-focused business website template for local service businesses.",
+    problem: "Local service businesses often lack an affordable, modern, and mobile-friendly digital presence that directly connects with their customers.",
+    solution: "Engineered a reusable, highly responsive website template tailored for local businesses, featuring direct WhatsApp integration to drive instant bookings.",
+    achievements: [
+      "Built a mobile-first, highly responsive modern UI",
+      "Integrated direct WhatsApp messaging to improve conversion rates",
+      "Designed a reusable component architecture for easy re-deployment",
+      "Optimized for fast loading and excellent Lighthouse performance"
+    ],
+    tech_stack: ["React", "Tailwind CSS", "Framer Motion"],
+    github_url: "https://github.com/RajShukla1",
+    demo_url: "https://rajshukla-salon.vercel.app",
   },
   {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
-    name: "Node.js",
-  },
-  {
-    img: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-    name: "React",
-  },
-  {
-    img: "https://cdn.svgrepo.com/show/303592/magento-2-logo.svg",
-    name: "Magento 2",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
-    name: "PHP",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-    name: "MySQL",
-  },
-  {
-    img: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg",
-    name: "AWS",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
-    name: "Git",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
-    name: "MongoDB",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
-    name: "Express",
-  },
-  {
-    img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-    name: "Postman",
-  },
-  {
-    img: "https://www.svgrepo.com/show/31053/xml.svg",
-    name: "XML",
-  },
+    id: 3,
+    title: "YouTube Clone",
+    shortDesc: "A video platform interface replicating core YouTube functionalities.",
+    problem: "Building a complex video-centric interface requires efficient handling of media, responsive video grids, and seamless user interaction without performance degradation.",
+    solution: "Developed a realistic front-end replica of YouTube, focusing on responsive design principles, video platform concepts, and a clean user interface.",
+    achievements: [
+      "Implemented seamless user authentication",
+      "Structured a robust frontend architecture for media consumption",
+      "Built responsive, dynamic video grids mirroring professional platforms",
+      "Enhanced user interactions and navigation flow"
+    ],
+    tech_stack: ["React", "JavaScript", "CSS"],
+    github_url: "https://github.com/RajShukla1",
+    demo_url: "https://raj-youtube.vercel.app",
+  }
 ];

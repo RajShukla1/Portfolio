@@ -1,45 +1,77 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Styles.css";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Sun, Moon, Search, Menu, X } from "lucide-react";
+import { useTheme } from "../hooks/useTheme";
+import "./Navbar.css";
 
-export const Navbar = () => {
-  const [isPage, setIsPage] = useState("hero");
+export const Navbar = ({ onOpenCommandPalette }) => {
+  const { theme, toggleTheme } = useTheme();
+  const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about-me" },
+    { name: "Projects", path: "/projects" },
+    { name: "Skills", path: "/skills" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
-    <div className="navMain">
-      <div
-        onClick={() => {
-          setIsPage("hero");
-        }}
-        style={isPage === "hero" ? { color: "black" } : null}
-      >
-        <Link to="/">Raj Pawan Shukla</Link>
+    <header className={`navbar ${isScrolled ? "glass scrolled" : ""}`}>
+      <div className="container navbar-container">
+        <Link to="/" className="navbar-logo">
+          <span className="logo-text">RS.</span>
+        </Link>
+
+        <nav className={`navbar-links ${isMobileMenuOpen ? "mobile-open" : ""}`}>
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className={`nav-link ${location.pathname === link.path ? "active" : ""}`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="navbar-actions">
+          <button
+            className="action-btn search-btn"
+            onClick={onOpenCommandPalette}
+            aria-label="Search"
+          >
+            <Search size={20} />
+            <span className="search-shortcut">Ctrl K</span>
+          </button>
+          
+          <button
+            className="action-btn theme-btn"
+            onClick={toggleTheme}
+            aria-label="Toggle Theme"
+          >
+            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
-      <div>
-        <div
-          onClick={() => {
-            setIsPage("about");
-          }}
-          style={isPage === "about" ? { color: "black" } : null}
-        >
-          <Link to="/about-me">Contact Me</Link>
-        </div>
-        <div
-          onClick={() => {
-            setIsPage("project");
-          }}
-          style={isPage === "project" ? { color: "black" } : null}
-        >
-          <Link to="/projects">Projects</Link>
-        </div>
-        <div
-          onClick={() => {
-            setIsPage("skill");
-          }}
-          style={isPage === "skill" ? { color: "black" } : null}
-        >
-          <Link to="/skills">Skills</Link>
-        </div>
-      </div>
-    </div>
+    </header>
   );
 };
