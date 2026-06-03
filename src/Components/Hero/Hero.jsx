@@ -50,7 +50,7 @@ const Hero = () => {
             <Link to="/projects" className="btn btn-primary">
               View My Work <ArrowRight size={18} />
             </Link>
-            <a href="/files/RajResume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline" download>
+            <a href="/files/RajPawanShuklaMagento.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline" download>
               Download Resume <Download size={18} />
             </a>
           </motion.div>
