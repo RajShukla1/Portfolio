@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "magento-2-upgrade-broke-multi-website",
+    "title": "How a Magento 2 Upgrade Broke Our Multi-Website Setup",
+    "date": "2026-06-04",
+    "excerpt": "A deep dive into troubleshooting a Magento 2 multi-website routing issue after an upgrade, and why the root cause was in the Nginx configuration.",
+    "readTime": "6 min read",
+    "filename": "magento-2-upgrade.md"
+  }
+]

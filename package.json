@@ -21,9 +21,11 @@
     "react-dom": "^18.3.1",
     "react-helmet-async": "^3.0.0",
     "react-icons": "^4.2.0",
+    "react-markdown": "^10.1.0",
     "react-router-dom": "^6.30.3",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.4",
+    "remark-gfm": "^4.0.1",
     "styled-components": "^5.3.1",
     "web-vitals": "^1.1.2"
   },

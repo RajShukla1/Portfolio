@@ -23,6 +23,7 @@ export const Navbar = ({ onOpenCommandPalette }) => {
     { name: "About", path: "/about-me" },
     { name: "Projects", path: "/projects" },
     { name: "Skills", path: "/skills" },
+    { name: "Blogs", path: "/blogs" },
     { name: "Contact", path: "/contact" },
   ];
 
