@@ -3,6 +3,7 @@ import { RouteMain } from "../Router/RouteMain";
 import { Navbar } from "./Navbar";
 import { CommandPalette } from "./CommandPalette";
 import FixSocialIcon from "./SocialIcon/FixSocialIcon";
+import WhatsAppFloat from "./SocialIcon/WhatsAppFloat";
 
 export const Main = () => {
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
@@ -29,6 +30,7 @@ export const Main = () => {
         onClose={() => setIsCommandPaletteOpen(false)} 
       />
       <FixSocialIcon />
+      <WhatsAppFloat />
     </div>
   );
 };
