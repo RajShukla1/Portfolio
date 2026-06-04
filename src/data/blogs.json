@@ -6,5 +6,13 @@
     "excerpt": "A deep dive into troubleshooting a Magento 2 multi-website routing issue after an upgrade, and why the root cause was in the Nginx configuration.",
     "readTime": "6 min read",
     "filename": "magento-2-upgrade.md"
+  },
+  {
+    "slug": "magento-2-missing-setup-directory",
+    "title": "Magento 2 Upgrade Issue: Missing setup Directory After an Interrupted Composer Install",
+    "date": "2026-06-01",
+    "excerpt": "How an interrupted composer install can leave a Magento 2 project without a setup directory, and how to quickly fix it.",
+    "readTime": "4 min read",
+    "filename": "magento-2-interrupted-composer.md"
   }
 ]
