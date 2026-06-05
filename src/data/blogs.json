@@ -1,5 +1,13 @@
 [
   {
+    "slug": "cached-cloudflare-403-magento",
+    "title": "How a Cached Cloudflare 403 Response Masqueraded as a Magento Frontend Failure",
+    "date": "2026-06-05",
+    "excerpt": "A deep dive into troubleshooting a strange Magento frontend issue that turned out to be a Cloudflare caching problem.",
+    "readTime": "6 min read",
+    "filename": "cloudflare-magento-403.md"
+  },
+  {
     "slug": "magento-2-upgrade-broke-multi-website",
     "title": "How a Magento 2 Upgrade Broke Our Multi-Website Setup",
     "date": "2026-06-04",
@@ -14,5 +22,13 @@
     "excerpt": "How an interrupted composer install can leave a Magento 2 project without a setup directory, and how to quickly fix it.",
     "readTime": "4 min read",
     "filename": "magento-2-interrupted-composer.md"
+  },
+  {
+    "slug": "cloudflare-tunnel-docker",
+    "title": "Exposing Local Docker Projects to the World with Cloudflare Tunnels",
+    "date": "2026-06-04",
+    "excerpt": "Ditch ngrok and port forwarding. Learn how to securely expose your local Docker environments using Cloudflare Tunnels and a custom domain.",
+    "readTime": "5 min read",
+    "filename": "cloudflare-tunnel-docker.md"
   }
 ]
