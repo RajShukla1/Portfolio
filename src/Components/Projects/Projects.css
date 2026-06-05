@@ -25,6 +25,27 @@
   background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
 }
 
+.project-image-container {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-image-container:hover .project-image {
+  transform: scale(1.02);
+}
+
 .project-title {
   font-size: 2rem;
   font-weight: 800;

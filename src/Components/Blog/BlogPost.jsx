@@ -69,6 +69,7 @@ export default function BlogPost() {
         <meta property="og:title" content={`${blogMeta.title} | Raj Pawan Shukla`} />
         <meta property="og:description" content={blogMeta.excerpt} />
         <meta property="og:type" content="article" />
+        <meta property="article:author" content="Raj Pawan Shukla" />
         <meta name="author" content="Raj Pawan Shukla" />
       </Helmet>
       
@@ -84,6 +85,9 @@ export default function BlogPost() {
           </span>
           <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
             <Clock size={16} /> {blogMeta.readTime}
+          </span>
+          <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <span>By Raj Pawan Shukla</span>
           </span>
         </div>
       </header>

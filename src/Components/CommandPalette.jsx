@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { Search, Home, User, Briefcase, Code, FileText, X } from "lucide-react";
+import { Search, Home, User, Briefcase, Code, FileText, X, BookOpen } from "lucide-react";
 import { useTheme } from "../hooks/useTheme";
 import "./CommandPalette.css";
 
@@ -15,10 +15,13 @@ export const CommandPalette = ({ isOpen, onClose }) => {
     { id: "about", title: "Go to About", icon: <User size={18} />, action: () => navigate("/about-me") },
     { id: "projects", title: "Go to Projects", icon: <Briefcase size={18} />, action: () => navigate("/projects") },
     { id: "skills", title: "Go to Skills", icon: <Code size={18} />, action: () => navigate("/skills") },
+    { id: "blogs", title: "Go to Blogs", icon: <BookOpen size={18} />, action: () => navigate("/blogs") },
     { id: "contact", title: "Go to Contact", icon: <FileText size={18} />, action: () => navigate("/contact") },
     { id: "resume", title: "Download Resume", icon: <FileText size={18} />, action: () => window.open("/files/rajResume.pdf", "_blank") },
     { id: "theme", title: `Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`, icon: theme === 'dark' ? <Search size={18} /> : <Search size={18} />, action: toggleTheme },
   ];
+
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const filteredCommands = commands.filter((cmd) =>
     cmd.title.toLowerCase().includes(query.toLowerCase())
@@ -27,8 +30,42 @@ export const CommandPalette = ({ isOpen, onClose }) => {
   useEffect(() => {
     if (isOpen && inputRef.current) {
       inputRef.current.focus();
+      setQuery("");
+      setSelectedIndex(0);
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    setSelectedIndex(0);
+  }, [query]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!isOpen) return;
+
+      if (e.key === "Escape") {
+        onClose();
+        return;
+      }
+
+      if (filteredCommands.length === 0) return;
+
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        setSelectedIndex((prev) => (prev + 1) % filteredCommands.length);
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        setSelectedIndex((prev) => (prev - 1 + filteredCommands.length) % filteredCommands.length);
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        filteredCommands[selectedIndex].action();
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, filteredCommands, selectedIndex, onClose]);
 
   if (!isOpen) return null;
 
@@ -55,10 +92,10 @@ export const CommandPalette = ({ isOpen, onClose }) => {
         <div className="command-palette-body">
           {filteredCommands.length > 0 ? (
             <ul className="command-list">
-              {filteredCommands.map((cmd) => (
+              {filteredCommands.map((cmd, index) => (
                 <li key={cmd.id}>
                   <button 
-                    className="command-item"
+                    className={`command-item ${index === selectedIndex ? "selected" : ""}`}
                     onClick={() => {
                       cmd.action();
                       onClose();

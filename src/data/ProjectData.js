@@ -14,6 +14,7 @@ export const ProjectList = [
     tech_stack: ["Next.js", "Supabase", "React Query", "Tesseract.js", "Tailwind CSS"],
     github_url: "https://github.com/RajShukla1",
     demo_url: "https://rajshukla-emanager.vercel.app",
+    image: "/images/emanager.png"
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ export const ProjectList = [
     tech_stack: ["React", "Tailwind CSS", "Framer Motion"],
     github_url: "https://github.com/RajShukla1",
     demo_url: "https://rajshukla-salon.vercel.app",
+    image: "/images/salon.png"
   },
   {
     id: 3,
@@ -46,5 +48,6 @@ export const ProjectList = [
     tech_stack: ["React", "JavaScript", "CSS"],
     github_url: "https://github.com/RajShukla1",
     demo_url: "https://raj-youtube.vercel.app",
+    image: "/images/raj-youtube.png"
   }
 ];

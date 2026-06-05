@@ -31,6 +31,11 @@ const Projects = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="project-content">
+                {project.image && (
+                  <div className="project-image-container">
+                    <img src={project.image} alt={project.title} className="project-image" />
+                  </div>
+                )}
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-short-desc">{project.shortDesc}</p>
                 

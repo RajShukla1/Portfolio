@@ -7,11 +7,13 @@ import Contact from "../Components/Contact/Contact.jsx";
 import BlogList from "../Components/Blog/BlogList.jsx";
 import BlogPost from "../Components/Blog/BlogPost.jsx";
 
+import LatestBlogs from "../Components/Blog/LatestBlogs.jsx";
+
 export function RouteMain() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<><Hero /><LatestBlogs /></>} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/about-me" element={<About />} />

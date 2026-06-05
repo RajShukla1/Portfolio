@@ -19,6 +19,7 @@ const skillsData = {
     { name: "PHP", icon: <FaPhp size={32} color="#777bb3" /> },
     { name: "Node.js", icon: <FaNodeJs size={32} color="#68a063" /> },
     { name: "REST APIs", icon: <FaNodeJs size={32} color="var(--text-primary)" /> },
+    { name: "RabbitMQ", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#FF6600'}}>RMQ</div> },
   ],
   "E-commerce": [
     { name: "Magento 2", icon: <FaMagento size={32} color="#f26322" /> },
@@ -27,15 +28,22 @@ const skillsData = {
     { name: "Klaviyo", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#28E0B3'}}>K</div> },
     { name: "Akeneo PIM", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#8831b5'}}>A</div> },
     { name: "Braintree", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#000000'}}>B</div> },
+    { name: "Doofinder", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#10529A'}}>D</div> },
+    { name: "Razorpay", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#3395FF'}}>R</div> },
   ],
-  "DevOps": [
+  "DevOps & Tools": [
     { name: "AWS", icon: <FaAws size={32} color="#ff9900" /> },
     { name: "Docker", icon: <FaDocker size={32} color="#2496ed" /> },
     { name: "Git", icon: <FaGithub size={32} color="var(--text-primary)" /> },
+    { name: "Bitbucket", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#2684FF'}}>Bit</div> },
+    { name: "Jira", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#0052CC'}}>J</div> },
+    { name: "FileZilla", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#BF0000'}}>FZ</div> },
   ],
-  "Database": [
+  "Database & Cache": [
     { name: "MySQL", icon: <SiMysql size={32} color="#4479a1" /> },
     { name: "PostgreSQL", icon: <SiPostgresql size={32} color="#336791" /> },
+    { name: "Elasticsearch", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#005571'}}>ES</div> },
+    { name: "Redis", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#DC382D'}}>Re</div> },
   ]
 };
 

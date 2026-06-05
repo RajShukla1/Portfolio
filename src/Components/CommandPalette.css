@@ -99,7 +99,7 @@
   transition: all 0.1s ease;
 }
 
-.command-item:hover, .command-item:focus {
+.command-item:hover, .command-item:focus, .command-item.selected {
   background: var(--primary-color);
   color: white;
   outline: none;

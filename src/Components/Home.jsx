@@ -1,8 +1,13 @@
 import "./Styles.css";
+import "./Blog/Blog.css"; // Import blog styles
 import Avatar from "@mui/material/Avatar";
 import { Link } from "react-router-dom";
+import { ArrowRight, Calendar, Clock } from "lucide-react";
+import blogsData from "../data/blogs.json";
 
 export const Home = () => {
+  const latestBlogs = blogsData.slice(0, 3); // Get latest 3 blogs
+
   return (
     <div className="homeMain">
       <div className="homeStart">
@@ -37,8 +42,37 @@ export const Home = () => {
   </div>
   <div>Connect with me on – LinkedIn | GitHub | Email</div>
 </div>
+
+      <div style={{ padding: '0 5%', marginBottom: '60px' }}>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', color: 'var(--text-primary)' }}>Latest Articles</h2>
+        <div className="blog-grid" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          {latestBlogs.map((blog) => (
+            <Link to={`/blogs/${blog.slug}`} key={blog.slug} className="blog-card" style={{ textDecoration: 'none' }}>
+              <h3 className="blog-title">{blog.title}</h3>
+              <div className="blog-meta">
+                <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                  <Calendar size={14} /> {blog.date}
+                </span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                  <Clock size={14} /> {blog.readTime}
+                </span>
+              </div>
+              <p className="blog-excerpt" style={{ color: 'var(--text-secondary)' }}>{blog.excerpt}</p>
+              <span className="blog-read-more" style={{ marginTop: 'auto' }}>
+                Read Article <ArrowRight size={16} />
+              </span>
+            </Link>
+          ))}
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '30px' }}>
+          <Link to="/blogs" className="btn btn-outline">
+            View All Articles <ArrowRight size={18} />
+          </Link>
+        </div>
+      </div>
+
       <div className="homeFooter">
-        <div>© 2025 Raj Pawan Shukla</div>
+        <div>© 2026 Raj Pawan Shukla</div>
         <div>All rights reserved</div>
       </div>
     </div>
