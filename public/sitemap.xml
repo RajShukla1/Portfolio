@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/about-me</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/skills</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/projects</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/contact</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/blogs</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/blogs/cached-cloudflare-403-magento</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/blogs/magento-2-upgrade-broke-multi-website</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/blogs/magento-2-missing-setup-directory</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rajshukla-portfolio.vercel.app/blogs/cloudflare-tunnel-docker</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>

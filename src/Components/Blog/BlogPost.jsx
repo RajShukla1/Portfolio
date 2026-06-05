@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import blogsData from "../../data/blogs.json";
 import "./Blog.css";
@@ -47,6 +48,10 @@ export default function BlogPost() {
   if (error || !blogMeta) {
     return (
       <div className="error-message">
+        <Helmet>
+          <title>Article Not Found | Raj Pawan Shukla</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
         <h2>Article Not Found</h2>
         <p>Sorry, the blog post you're looking for doesn't exist or failed to load.</p>
         <Link to="/blogs" className="back-link" style={{ marginTop: '20px' }}>
@@ -58,6 +63,15 @@ export default function BlogPost() {
 
   return (
     <article className="blog-post-container">
+      <Helmet>
+        <title>{blogMeta.title} | Raj Pawan Shukla</title>
+        <meta name="description" content={blogMeta.excerpt} />
+        <meta property="og:title" content={`${blogMeta.title} | Raj Pawan Shukla`} />
+        <meta property="og:description" content={blogMeta.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta name="author" content="Raj Pawan Shukla" />
+      </Helmet>
+      
       <Link to="/blogs" className="back-link">
         <ArrowLeft size={16} /> Back to Blogs
       </Link>
