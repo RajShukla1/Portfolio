@@ -44,6 +44,12 @@ const skillsData = {
     { name: "PostgreSQL", icon: <SiPostgresql size={32} color="#336791" /> },
     { name: "Elasticsearch", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#005571'}}>ES</div> },
     { name: "Redis", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#DC382D'}}>Re</div> },
+  ],
+  "SEO & Analytics": [
+    { name: "Google Analytics", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#E37400'}}>GA</div> },
+    { name: "Search Console", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#4285F4'}}>GSC</div> },
+    { name: "Merchant Center", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#34A853'}}>GMC</div> },
+    { name: "Technical SEO (Sitemaps, robots.txt)", icon: <div style={{fontWeight: 'bold', fontSize: '18px', color: '#888888'}}>SEO</div> },
   ]
 };
 
