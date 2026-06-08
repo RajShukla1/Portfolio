@@ -28,6 +28,10 @@
 
   <!-- Blog Posts -->
   <url>
+    <loc>https://rajshukla-portfolio.vercel.app/blogs/magento-2-opensearch-combinations</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://rajshukla-portfolio.vercel.app/blogs/cached-cloudflare-403-magento</loc>
     <priority>0.7</priority>
   </url>

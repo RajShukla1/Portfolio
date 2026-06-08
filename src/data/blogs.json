@@ -1,5 +1,13 @@
 [
   {
+    "slug": "magento-2-opensearch-combinations",
+    "title": "How I Solved Invalid Configurable Product Filter Combinations in Magento 2 OpenSearch",
+    "date": "2026-06-08",
+    "excerpt": "A technical deep dive into solving Magento 2 OpenSearch invalid filter combinations using custom indexing and query manipulation.",
+    "readTime": "5 min read",
+    "filename": "magento-2-opensearch.md"
+  },
+  {
     "slug": "cached-cloudflare-403-magento",
     "title": "How a Cached Cloudflare 403 Response Masqueraded as a Magento Frontend Failure",
     "date": "2026-06-05",
