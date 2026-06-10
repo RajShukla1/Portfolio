@@ -1,5 +1,13 @@
 [
   {
+    "slug": "magento-nginx-fastcgi-error",
+    "title": "Fixing Nginx \"no port in upstream fastcgi_backend\" Error in Magento Docker",
+    "date": "2026-06-10",
+    "excerpt": "A deep dive into why the \"no port in upstream fastcgi_backend\" error occurs in modern Magento Docker setups and how to fix it by understanding dynamic Nginx routing.",
+    "readTime": "5 min read",
+    "filename": "magento-nginx-fastcgi-error.md"
+  },
+  {
     "slug": "magento-2-opensearch-combinations",
     "title": "How I Solved Invalid Configurable Product Filter Combinations in Magento 2 OpenSearch",
     "date": "2026-06-08",
