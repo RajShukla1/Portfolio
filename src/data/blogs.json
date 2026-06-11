@@ -1,5 +1,13 @@
 [
   {
+    "slug": "php-8-3-upgrade-broke-magento-docker",
+    "title": "How a PHP 8.3 Upgrade Broke My Magento Docker Environment",
+    "date": "2026-06-11",
+    "excerpt": "A debugging journey into a 502 Bad Gateway error caused by mixing old Nginx images with newer PHP images in Mark Shust's Magento Docker setup.",
+    "readTime": "5 min read",
+    "filename": "php-8-3-magento-docker-502.md"
+  },
+  {
     "slug": "magento-nginx-fastcgi-error",
     "title": "Fixing Nginx \"no port in upstream fastcgi_backend\" Error in Magento Docker",
     "date": "2026-06-10",
