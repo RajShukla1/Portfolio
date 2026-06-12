@@ -1,9 +1,9 @@
 [
   {
-    "slug": "php-8-3-upgrade-broke-magento-docker",
-    "title": "How a PHP 8.3 Upgrade Broke My Magento Docker Environment",
+    "slug": "magento-2-docker-502-bad-gateway-error-fix",
+    "title": "Fixing Magento 2 Docker 502 Bad Gateway Error: Image Mismatch",
     "date": "2026-06-11",
-    "excerpt": "A debugging journey into a 502 Bad Gateway error caused by mixing old Nginx images with newer PHP images in Mark Shust's Magento Docker setup.",
+    "excerpt": "Learn how to troubleshoot and fix a 502 Bad Gateway error in a Magento 2 Docker environment caused by an Nginx and PHP-FPM image version mismatch.",
     "readTime": "5 min read",
     "filename": "php-8-3-magento-docker-502.md"
   },
