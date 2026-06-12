@@ -27,7 +27,9 @@ export default function BlogPost() {
           return response.text();
         })
         .then((text) => {
-          setContent(text);
+          // Remove YAML frontmatter if present
+          const cleanText = text.replace(/^---[\s\S]+?---/, '').trim();
+          setContent(cleanText);
           setLoading(false);
         })
         .catch((err) => {
