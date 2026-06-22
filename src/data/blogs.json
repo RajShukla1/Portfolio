@@ -1,5 +1,21 @@
 [
   {
+    "slug": "phantom-cls-lighthouse",
+    "title": "Phantom CLS in Lighthouse: How to Hunt Down and Fix Invisible Layout Shifts",
+    "date": "2026-06-29",
+    "excerpt": "A deep dive into identifying and resolving invisible Cumulative Layout Shifts (CLS) caused by lazy-loaded hero banners and render-blocking scripts.",
+    "readTime": "4 min read",
+    "filename": "phantom-cls-lighthouse.md"
+  },
+  {
+    "slug": "every-bug-is-a-crime-scene",
+    "title": "Every Bug Is a Crime Scene: Why Great Developers Think Like Detectives",
+    "date": "2026-06-22",
+    "excerpt": "Discover why the best developers aren't just walking encyclopedias, but detectives who gather evidence, recreate crime scenes, and solve mysteries.",
+    "readTime": "4 min read",
+    "filename": "every-bug-is-a-crime-scene.md"
+  },
+  {
     "slug": "magento-2-docker-502-bad-gateway-error-fix",
     "title": "Fixing Magento 2 Docker 502 Bad Gateway Error: Image Mismatch",
     "date": "2026-06-11",
